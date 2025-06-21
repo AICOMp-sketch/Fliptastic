@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Image Flipper</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="flipper-container">
+        <div class="flipper" id="flipper">
+            <div class="flipper-front">
+                <div class="flipper-content pulse">
+                    <h2>Discover Amazing Places</h2>
+                    <p>Click the button below to reveal breathtaking destinations from around the world</p>
+                </div>
+            </div>
+            <div class="flipper-back">
+                <img src="https://source.unsplash.com/random/600x400/?nature" alt="Nature" class="flipper-img" id="back-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="btn" id="flip-btn">Flip Image</button>
+        <button class="btn btn-secondary" id="change-btn">Change Image</button>
+    </div>
+
+    <div class="dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+    </div>
+
+    <p class="credit">Image Flipper Animation © 2023</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
